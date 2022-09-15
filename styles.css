@@ -168,11 +168,7 @@ button {
   padding: 20px 30px;
   color: white;
   border-radius: 15px;
-  background: rgb(255, 255, 255);
-  background: linear-gradient(92.49deg,
-      rgba(255, 255, 255, 0.1) 0.18%,
-      rgba(255, 255, 255, 0.05) 99.85%);
-  backdrop-filter: blur(5px);
+
   margin-bottom: 30px;
 }
 
@@ -188,7 +184,9 @@ button {
   top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+
+
+@media only screen and (max-width: 991px) {
   .box-container {
     padding: 0 20px;
     width: 100%;
@@ -196,5 +194,37 @@ button {
 
   .card {
     flex-direction: column;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(92.49deg,
+        rgba(255, 255, 255, 0.1) 0.18%,
+        rgba(255, 255, 255, 0.05) 99.85%);
+    backdrop-filter: blur(5px);
   }
+
+}
+
+@media only screen and (min-width:992px) {
+  .col {
+    padding: 20px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(92.49deg,
+        rgba(255, 255, 255, 0.1) 0.18%,
+        rgba(255, 255, 255, 0.05) 99.85%);
+    backdrop-filter: blur(5px);
+  }
+
+  #hisTitle {
+    width: 50%;
+  }
+
+  #hisTime {
+    width: 25%;
+
+  }
+
+  #hisErrorCount {
+    width: 25%;
+  }
+
 }
