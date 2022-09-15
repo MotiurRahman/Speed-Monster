@@ -164,6 +164,11 @@ button {
   padding: 50px;
   display: flex;
   justify-content: space-between;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(92.49deg,
+      rgba(255, 255, 255, 0.1) 0.18%,
+      rgba(255, 255, 255, 0.05) 99.85%);
+  backdrop-filter: blur(5px);
   align-items: center;
   padding: 20px 30px;
   color: white;
@@ -194,6 +199,7 @@ button {
 
   .card {
     flex-direction: column;
+    text-align: center;
     background: rgb(255, 255, 255);
     background: linear-gradient(92.49deg,
         rgba(255, 255, 255, 0.1) 0.18%,
@@ -204,27 +210,16 @@ button {
 }
 
 @media only screen and (min-width:992px) {
-  .col {
-    padding: 20px;
-    margin: 10px;
-    background: rgb(255, 255, 255);
-    background: linear-gradient(92.49deg,
-        rgba(255, 255, 255, 0.1) 0.18%,
-        rgba(255, 255, 255, 0.05) 99.85%);
-    backdrop-filter: blur(5px);
+  #histories {
+    display: grid;
+    row-gap: 20px;
+    column-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  #hisTitle {
-    width: 50%;
-  }
-
-  #hisTime {
-    width: 25%;
-
-  }
-
-  #hisErrorCount {
-    width: 25%;
+  .card {
+    flex-direction: column;
+    text-align: center;
   }
 
 }
