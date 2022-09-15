@@ -19,19 +19,26 @@
         .queSection {
             margin-top: 20px;
         }
+
+        .leftPaddingItem {
+            padding-left: 20px;
+        }
     </style>
 </head>
 
 <body class="box-container">
+    <div>
+        <h1 class="title">Blog Page</h1>
+    </div>
     <section class="queSection">
-        <h1>1. What is the difference between local storage and session storage.</h1>
+        <h2>1. What is the difference between local storage and session storage.</h2>
         <p>Ans: sessionStorage is similar to localStorage, the difference is that while data in localStorage doesn't
             expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a
             particular tab in the browser, a unique page session gets created and assigned to that particular tab.</p>
     </section>
 
     <section class="queSection">
-        <h1>2. What is the difference between global scope and block scope.</h1>
+        <h2>2. What is the difference between global scope and block scope.</h2>
         <p>Block Level Scope: This scope restricts the variable that is declared inside a specific block, from access by
             the outside of the block. The let & const keyword facilitates the variables to be block scoped.</p>
         <br>
@@ -42,7 +49,7 @@
     </section>
 
     <section class="queSection">
-        <h1>3. How event loop works in JavaScript.</h1>
+        <h2>3. How event loop works in JavaScript.</h2>
         <p>Ans. The event loop is a mechanism that allows JavaScript to perform non-blocking operations. When an
             asynchronous
             task is started, the event loop will start running. Once the task is completed, the event loop will again
@@ -50,15 +57,15 @@
     </section>
 
     <section class="queSection">
-        <h1>4. How many ways we get undefined in JavaScript.</h1>
-        <p>1. variable that is not initialized will get undefined.</p>
-        <p>2. Function with no return.</p>
-        <p>3. Paramete that is not passed will be undefined.</p>
-        <p>4. If return has nothing on the right side will return undefined.</p>
-        <p>5. Property that doesn't exist on an object will give you undefined.</p>
-        <p>6. Accessing array elements outside of the index range.</p>
-        <p>7. Deleting an element inside an array.</p>
-        <p>8. Set value directly to an undefined.</p>
+        <h2>4. How many ways we get undefined in JavaScript.</h2>
+        <p class="leftPaddingItem">1. variable that is not initialized will get undefined.</p>
+        <p class="leftPaddingItem">2. Function with no return.</p>
+        <p class="leftPaddingItem">3. Paramete that is not passed will be undefined.</p>
+        <p class="leftPaddingItem">4. If return has nothing on the right side will return undefined.</p>
+        <p class="leftPaddingItem">5. Property that doesn't exist on an object will give you undefined.</p>
+        <p class="leftPaddingItem">6. Accessing array elements outside of the index range.</p>
+        <p class="leftPaddingItem">7. Deleting an element inside an array.</p>
+        <p class="leftPaddingItem">8. Set value directly to an undefined.</p>
     </section>
 
 </body>
